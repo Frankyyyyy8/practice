@@ -1,3 +1,24 @@
+/* C-TASK (NodeJS)
+
+  Shunday function tuzing,
+u 2ta string parametr ega bolsin,
+hamda agar har ikkala string bir hil harflardan
+iborat bolsa true aks holda false qaytarsin
+MASALAN checkContent("mitgroup", "gmtiprou") return qiladi true;
+*/
+
+// Masalani yechimi:
+function checkContent(a, b) {
+  if (a.length !== b.length) return false;
+
+  const sort = (ele) => ele.split("").sort().join("");
+
+  return sort(a) === sort(b);
+}
+
+const result = checkContent("mitgroup", "gmtiprou");
+console.log("result:", result);
+
 /* B-TASK
  Shunday function tuzing,
  u 1ta string parametrga ega bolsin, 
@@ -8,19 +29,19 @@ MASALAN countDigits("ad2a54y79wet0sfgb9") 7ni return qiladi.
 */
 
 // Masalani yechimi:
-function countDigits(dig) {
-  let count = 0;
+// function countDigits(dig) {
+//   let count = 0;
 
-  for (let ele of dig) {
-    if (ele >= "0" && ele <= "9") {
-      count++;
-    }
-  }
+//   for (let ele of dig) {
+//     if (ele >= "0" && ele <= "9") {
+//       count++;
+//     }
+//   }
 
-  return count;
-}
-const result = countDigits("ad2a54y79wet0sfgb9");
-console.log("result:", result);
+//   return count;
+// }
+// const result = countDigits("ad2a54y79wet0sfgb9");
+// console.log("result:", result);
 
 /* A-TASK: 
 SAVOL: Shunday 2 parametrli function tuzing, 

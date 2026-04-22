@@ -75,22 +75,21 @@ print("person:", person)
 is_student = True
 is_admin = False
 is_guest = True
-# is_parent = True
 is_parent = False
 
-
-# if not is_student:
-#     print("Welcome here, do you want ot be student!")
-# elif is_admin:
-#     print("Please go to this office!")
-# elif is_guest or is_parent: #  (or) bitta true bolsa boldi
-#     print("Waiting room is over there!")
 
 if not is_student:
     print("Welcome here, do you want ot be student!")
 elif is_admin:
     print("Please go to this office!")
-elif is_guest and is_parent:
+elif is_guest or is_parent:  # (or) bitta true bolsa boldi
     print("Waiting room is over there!")
-else:
-    print("Etc")
+
+# if not is_student:
+#     print("Welcome here, do you want ot be student!")
+# elif is_admin:
+#     print("Please go to this office!")
+# elif is_guest and is_parent:
+#     print("Waiting room is over there!")
+# else:
+#     print("Other cases")
