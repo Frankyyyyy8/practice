@@ -34,6 +34,7 @@ print(animals[0])
 people = "Andrew", "John"
 animals = "dog",
 
+
 print("===== Unpacking arguments ===== ")
 groups = ["MIT", "FLEXY", "DEVEX", "MG"]
 # (x, y, z, a) = groups
@@ -78,5 +79,16 @@ def greeting(*args, **kwargs):
     print("*args >", args)
     print("**kwargs >", kwargs)
 
+
  # Call
 greeting("hi", True, 10, name="John", age=22)
+
+
+print("===== zip ===== ")
+tuple1 = (1, 2, 3, 4)
+tuple2 = ('a', 'b', 'c')
+
+zipped = zip(tuple1, tuple2)
+print("zipped:", zipped)
+result = list(zipped)
+print(f"the result: {result}")
