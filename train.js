@@ -1,3 +1,29 @@
+/*
+D-TASK (NodeJS)
+
+ Shunday function tuzingki unga integerlardan iborat
+array pass bolsin va function bizga osha arrayning eng
+katta qiymatiga tegishli birinchi indexni qaytarsin.
+MASALAN: getHighestIndex([5, 21, 12, 21, 8]) return qiladi 1 sonini.
+*/
+
+// Masalani yechimi:
+function getHighestIndex(intArr) {
+  let a = intArr[0];
+  let b = 0;
+
+  for (let i = 0; i < intArr.length; i++) {
+    if (intArr[i] > a) {
+      a = intArr[i];
+      b = i;
+    }
+  }
+  return b;
+}
+
+const result = getHighestIndex([5, 21, 12, 21, 8]);
+console.log("result:", result);
+
 /* C-TASK (NodeJS)
 
   Shunday function tuzing,
@@ -8,16 +34,16 @@ MASALAN checkContent("mitgroup", "gmtiprou") return qiladi true;
 */
 
 // Masalani yechimi:
-function checkContent(a, b) {
-  if (a.length !== b.length) return false;
+// function checkContent(a, b) {
+//   if (a.length !== b.length) return false;
 
-  const sort = (ele) => ele.split("").sort().join("");
+//   const sort = (ele) => ele.split("").sort().join("");
 
-  return sort(a) === sort(b);
-}
+//   return sort(a) === sort(b);
+// }
 
-const result = checkContent("mitgroup", "gmtiprou");
-console.log("result:", result);
+// const result = checkContent("mitgroup", "gmtiprou");
+// console.log("result:", result);
 
 /* B-TASK
  Shunday function tuzing,
