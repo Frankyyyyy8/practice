@@ -1,3 +1,18 @@
+/*  
+E-TASK (NodeJS)
+
+Shunday function tuzing, u bitta string argumentni qabul
+qilib osha stringni teskari qilib return qilsin.
+MASALAN: getReverse("hello") return qilsin "olleh"
+*/
+// Masalani yechimi:
+function getReverse(str) {
+  return str.split("").reverse().join("");
+}
+
+result = getReverse("hello");
+console.log("result:", result);
+
 /*
 D-TASK (NodeJS)
 
@@ -8,21 +23,21 @@ MASALAN: getHighestIndex([5, 21, 12, 21, 8]) return qiladi 1 sonini.
 */
 
 // Masalani yechimi:
-function getHighestIndex(intArr) {
-  let a = intArr[0];
-  let b = 0;
+// function getHighestIndex(intArr) {
+//   let a = intArr[0];
+//   let b = 0;
 
-  for (let i = 0; i < intArr.length; i++) {
-    if (intArr[i] > a) {
-      a = intArr[i];
-      b = i;
-    }
-  }
-  return b;
-}
+//   for (let i = 0; i < intArr.length; i++) {
+//     if (intArr[i] > a) {
+//       a = intArr[i];
+//       b = i;
+//     }
+//   }
+//   return b;
+// }
 
-const result = getHighestIndex([5, 21, 12, 21, 8]);
-console.log("result:", result);
+// const result = getHighestIndex([5, 21, 12, 21, 8]);
+// console.log("result:", result);
 
 /* C-TASK (NodeJS)
 
