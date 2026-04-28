@@ -13,11 +13,11 @@ print("====== Python Packages & Core Package ======")
 
 
 # Core Package
-# t = turtle.Turtle()
-# t.shape("turtle")
-# t.speed(2)
-# t.circle(150)
-# turtle.done()
+t = turtle.Turtle()
+t.shape("turtle")
+t.speed(2)
+t.circle(150)
+turtle.done()
 
 
 my_file = open("material/message.txt", "r")
@@ -48,21 +48,11 @@ with Image.open("material/logo.png") as img_obj:
 print("====== Debugging ======")
 
 
-# def get_summary(*args):  # Define
-#     total_amount = 0
-#     for a in args:
-#         total_amount += a
-#     return total_amount
-
-
-# result = get_summary(1, 2, 3, 4, 5)  # CALL
-# print("result:", result)
-
 def get_summary(*args):  # Define
     total_amount = 0
     for a in args:
         total_amount += a
-    return total_amount  # solve the bug via debugging
+        return total_amount  # find the bug via debugging
 
 
 test = 100

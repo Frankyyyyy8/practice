@@ -1,3 +1,19 @@
+/* 
+F-TASK (NodeJS)
+
+ Shunday findDoublers function tuzing, unga faqat bitta
+string argument pass bolib, agar stringda bir hil harf
+qatnashgan bolsa true, qatnashmasa false qaytarishi kerak.
+MASALAN: getReverse("hello") return true return qiladi
+*/
+
+// Masalani yechimi:
+function findDoublers(str) {
+  return new Set(str).size !== str.length;
+}
+const result = findDoublers("hello");
+console.log("result:", result);
+
 /*  
 E-TASK (NodeJS)
 
@@ -6,12 +22,12 @@ qilib osha stringni teskari qilib return qilsin.
 MASALAN: getReverse("hello") return qilsin "olleh"
 */
 // Masalani yechimi:
-function getReverse(str) {
-  return str.split("").reverse().join("");
-}
+// function getReverse(str) {
+//   return str.split("").reverse().join("");
+// }
 
-result = getReverse("hello");
-console.log("result:", result);
+// result = getReverse("hello");
+// console.log("result:", result);
 
 /*
 D-TASK (NodeJS)
