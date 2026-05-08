@@ -1,3 +1,23 @@
+/* J-TASK (NodeJS)
+
+Shunday function yozing, u parametridagi array ichida 
+eng kop takrorlangan raqamni topib qaytarsin.
+MASALAN: majorityElement([1,2,3,4,5,4,3,4]) return 4
+*/
+
+// Masalani yechimi:
+function majorityElement(arr) {
+  return arr
+    .sort(
+      (a, b) =>
+        arr.filter((v) => v === a).length - arr.filter((v) => v === b).length,
+    )
+    .pop();
+}
+
+result = majorityElement([1, 2, 3, 4, 5, 4, 3, 4]);
+console.log("result:", result);
+
 /* H-TASK (NodeJS)
 
 shunday function tuzing, u integerlardan iborat arrayni
@@ -8,20 +28,20 @@ MASALAN: getPositive([1, -4, 2]) return qiladi "12"
 
 // Masalani yechimi:
 
-function getPositive(ele) {
-  let result = "";
+// function getPositive(ele) {
+//   let result = "";
 
-  for (let i = 0; i < ele.length; i++) {
-    if (ele[i] > 0) {
-      result += ele[i];
-    }
-  }
+//   for (let i = 0; i < ele.length; i++) {
+//     if (ele[i] > 0) {
+//       result += ele[i];
+//     }
+//   }
 
-  return result;
-}
+//   return result;
+// }
 
-const result = getPositive([1, -4, 2, 5]);
-console.log("result:", result);
+// const result = getPositive([1, -4, 2, 5]);
+// console.log("result:", result);
 
 /* 
 F-TASK (NodeJS)
