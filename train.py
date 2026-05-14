@@ -1,4 +1,25 @@
 '''
+M-TASK (PYTHON)
+
+Shunday function yozing, u string qabul qilsin va string
+palindrom yani togri oqilganda ham, orqasidan oqilganda 
+ham bir hil oqiladigan soz ekanligini aniqlab boolean 
+qiymat qaytarsin.
+MASALAN: palindrom_check("dad") return True;  palindrom_check("son") return False;
+
+'''
+
+# Masalani yechimi:
+
+def palindrom_check(s: str) -> bool:
+    s = s.lower().replace(" ", "")
+    return s == s[::-1]
+
+print(palindrom_check("dad"))
+print(palindrom_check("son"))
+ 
+
+'''
 K-TASK (PYTHON)  Shunday function yozing, u string
 qabul qilsin va string ichidagi eng uzun sozni qaytarsin.
 MASALAN: find_longest("I come from Uzbekistan") return "Uzbekistan"
@@ -7,14 +28,14 @@ MASALAN: find_longest("I come from Uzbekistan") return "Uzbekistan"
 # Masalani yechimi:
 
 
-def find_longest(text):
-    words = text.split()
-    longest = max(words, key=len)
-    return longest
+# def find_longest(text):
+#     words = text.split()
+#     longest = max(words, key=len)
+#     return longest
 
 
-result = find_longest("I come from Uzbekistan")
-print("result:", result)
+# result = find_longest("I come from Uzbekistan")
+# print("result:", result)
 
 '''
 I-TASK (PYTHON)
