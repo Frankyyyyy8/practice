@@ -1,3 +1,32 @@
+/* N-TASK (NodeJS)
+
+  Shunday function yozing, u raqamlardan tashkil topgan 
+array qabul qilsin va array ichidagi har bir raqam uchun 
+raqamni ozi va hamda osha raqamni kvadratidan tashkil 
+topgan object hosil qilib, hosil bolgan objectlarni array 
+ichida qaytarsin.
+MASALAN: getSquareNumbers([1, 2, 3]) return [{number: 1, square: 1}, 
+{number: 2, square: 4}, {number: 3, square: 9}];
+*/
+
+// Masalani yechimi:
+
+function getSquareNumbers(numbers) {
+  const result = [];
+
+  for (let i = 0; i < numbers.length; i++) {
+    result.push({
+      number: numbers[i],
+      square: numbers[i] ** 2,
+    });
+  }
+
+  return result;
+}
+
+const result = getSquareNumbers([1, 2, 3]);
+console.log("result:", result);
+
 /* L-TASK (NodeJS)
 
 Shunday function yozing, u string qabul qilsin va string
@@ -7,15 +36,15 @@ MASALAN: reverseSentence("we like coding!") return "ew ekil gnidoc";
 */
 
 // Masalani yechimi:
-function reverseSentence(str) {
-  return str
-    .split(" ")
-    .map((word) => word.split("").reverse().join(""))
-    .join(" ");
-}
+// function reverseSentence(str) {
+//   return str
+//     .split(" ")
+//     .map((word) => word.split("").reverse().join(""))
+//     .join(" ");
+// }
 
-const result = reverseSentence("we like coding!");
-console.log("result:", result);
+// const result = reverseSentence("we like coding!");
+// console.log("result:", result);
 // Output: "ew ekil !gnidoc"
 
 /* J-TASK (NodeJS)
