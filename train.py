@@ -1,4 +1,27 @@
 '''
+O-TASK (PYTHON)
+
+ Shunday function yozing, u har xil valuelardan iborat 
+array qabul qilsin va List ichidagi sonlar yigindisini 
+hisoblab chiqqan javobni qaytarsin.
+MASALAN: calculate_summary([10, "10", {son: 10}, true, 35]) return 45
+
+'''
+# Masalani yechimi:
+
+
+def calculate_summary(arr):
+    total = 0
+    for item in arr:
+        if isinstance(item, (int, float)) and not isinstance(item, bool):
+            total += item
+    return total
+
+
+print(calculate_summary([10, "10", {int: 10}, True, 35]))
+
+
+'''
 M-TASK (PYTHON)
 
 Shunday function yozing, u string qabul qilsin va string
@@ -11,13 +34,13 @@ MASALAN: palindrom_check("dad") return True;  palindrom_check("son") return Fals
 
 # Masalani yechimi:
 
-def palindrom_check(s: str) -> bool:
-    s = s.lower().replace(" ", "")
-    return s == s[::-1]
+# def palindrom_check(s: str) -> bool:
+#     s = s.lower().replace(" ", "")
+#     return s == s[::-1]
 
-print(palindrom_check("dad"))
-print(palindrom_check("son"))
- 
+# print(palindrom_check("dad"))
+# print(palindrom_check("son"))
+
 
 '''
 K-TASK (PYTHON)  Shunday function yozing, u string
