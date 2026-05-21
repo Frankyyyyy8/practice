@@ -1,3 +1,23 @@
+/* P-TASK (NodeJS)
+
+Shunday function yozing, u object qabul qilsin va arrayni 
+object arrayga otkazib arrayni qaytarsin qaytarsin.
+MASALAN: objectToArray( {a: 10, b: 20}) return [['a', 10], ['b', 20]]
+*/
+
+// Masalani yechimi:
+function objectToArray(arr) {
+  const result = [];
+  for (let key in arr) {
+    result.push([key, arr[key]]);
+  }
+
+  return result;
+}
+
+const result = objectToArray({ a: 10, b: 20 });
+console.log("result:", result);
+
 /* N-TASK (NodeJS)
 
   Shunday function yozing, u raqamlardan tashkil topgan 
@@ -11,21 +31,21 @@ MASALAN: getSquareNumbers([1, 2, 3]) return [{number: 1, square: 1},
 
 // Masalani yechimi:
 
-function getSquareNumbers(numbers) {
-  const result = [];
+// function getSquareNumbers(numbers) {
+//   const result = [];
 
-  for (let i = 0; i < numbers.length; i++) {
-    result.push({
-      number: numbers[i],
-      square: numbers[i] ** 2,
-    });
-  }
+//   for (let i = 0; i < numbers.length; i++) {
+//     result.push({
+//       number: numbers[i],
+//       square: numbers[i] ** 2,
+//     });
+//   }
 
-  return result;
-}
+//   return result;
+// }
 
-const result = getSquareNumbers([1, 2, 3]);
-console.log("result:", result);
+// const result = getSquareNumbers([1, 2, 3]);
+// console.log("result:", result);
 
 /* L-TASK (NodeJS)
 
